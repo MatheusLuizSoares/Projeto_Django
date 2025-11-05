@@ -4,6 +4,13 @@ from .models import Recipe
 from recipes.views import contato, home
 # Create your views here.
 
+
+#teste
 def home(request):
-    recipes = Recipe.objects.all()
-    return HttpResponse(f"Number of recipes: {recipes.count()}")
+    HttpResponse("home")
+    
+def contato(request):
+    HttpResponse("contato")
+
+def sobre(request):
+    HttpResponse("sobre")        
