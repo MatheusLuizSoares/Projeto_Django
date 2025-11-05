@@ -1,16 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Recipe
-from recipes.views import contato, home
 # Create your views here.
 
 
 #teste
 def home(request):
-    HttpResponse("home")
+    return render(request, 'home.html')
     
 def contato(request):
-    HttpResponse("contato")
+    return render(request, 'recipes/pages/contato.html')
 
 def sobre(request):
-    HttpResponse("sobre")        
+    return render(request, 'recipes/pages/sobre.html') 
