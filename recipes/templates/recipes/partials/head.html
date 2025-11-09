@@ -7,10 +7,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Recipes</title>
 
   <style>
+   :root {
+  /* 🌊 Cores principais — tema marítimo */
+  --color-primary: #1b9aaa;              /* Azul oceano */
+  --color-primary-hover: #188a99;        /* Azul mais escuro */
+  --color-primary-dark: #0d3b3e;         /* Azul profundo */
+  --color-primary-dark-hover: #14545a;   /* Azul-marinho */
+  --color-primary-light: #d9f2f2;        /* Azul claro, tipo espuma do mar */
+  --color-primary-light-hover: #bfe7e7;  /* Tom suave de água */
+
+  /* 🌅 Cores de apoio — areia e coral */
+  --color-secondary: #f7b267;            /* Tom areia */
+  --color-secondary-hover: #f79d65;
+  --color-accent: #ff6b6b;               /* Coral (detalhes ou botões) */
+  --color-accent-hover: #e55a5a;
+
+  /* ⚫️⚪️ Neutros */
+  --color-white: #ffffff;
+  --color-black: #001219;
+
+  --color-dark-text: #133b3a;            /* Texto principal escuro */
+  --color-light-text: #f0f8f8;           /* Texto claro em fundos escuros */
+
+  /* 💬 Feedback (mensagens) */
+  --color-info-light: #cce5ff;
+  --color-debug-light: #cce5ff;
+  --color-success-light: #d4edda;
+  --color-alert-light: #fff3cd;
+  --color-warning-light: #fff3cd;
+  --color-error-light: #f8d7da;
+
+  --color-info-dark: #007bff;
+  --color-debug-dark: #007bff;
+  --color-success-dark: #4a9c5d;
+  --color-alert-dark: #927f40;
+  --color-warning-dark: #927f40;
+  --color-error-dark: #da525d;
+
+  /* ⚙️ Tons de cinza - com leve tom azulado */
+  --color-gray-0: #f4fafa;
+  --color-gray-1: #e2ebeb;
+  --color-gray-2: #cfdede;
+  --color-gray-3: #bcd1d1;
+  --color-gray-4: #a9c4c4;
+  --color-gray-5: #96b7b7;
+  --color-gray-6: #839a9a;
+  --color-gray-7: #5a7575;
+  --color-gray-8: #385858;
+  --color-gray-9: #1b3b3b;
+
+  /* 🖋️ Fontes */
+  --font-primary: 'Poppins', sans-serif;
+  --font-headings: 'Playfair Display', serif;
+
+  /* 📏 Espaçamento */
+  --spacing-gutter-medium: 3rem;
+  --spacing-gutter-large: 4rem;
+}
+
+
+
     * {
       padding: 0;
       margin: 0;
@@ -22,7 +84,37 @@
    } 
    body{
       font-size:1.6rem;
+      font-family: var(--font-primary);
    
+    }
+   .container {
+      
+      max-width: 144rem;
+      margin: 0 auto;
+      padding: 0 var(--spacing-gutter-medium);
+    
+    }
+
+    .main-header-container {
+      background-color: var(--color-primary);
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .main-logo {
+      color: var(--color-white);
+      font-size: 4.0rem;
+      text-decoration: none;
+      display:flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;   
+      
+      width: fit-content;
+      margin: 0 auto;   
+    }
+    .main-logo-icon {
+      margin-righ: 2rem
+      font-size: 4.5rem;
     }
   </style>
 </head>
